@@ -1,0 +1,81 @@
+
+
+                Uri webpage = Uri.parse(urlText);
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+                if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivity(intent);
+                }
+
+
+
+Uri 
+- it is a class
+-uri stands for a Uniform Resource Identifier (URI). 
+-A URI is a string of characters that identify a particular resource. 
+-In the context of web development, URIs are often used to represent web addresses or URLs.
+
+
+Uri.parse(urlText)
+-urlText is the variable where we have stored the  link given by the user. 
+-parse is a method present inside uri class.
+-The method takes a string (urlText) as an argument.
+-The purpose of this method is to parse the given string and create a Uri object from it.
+
+
+ACTION_VIEW
+-Intent.ACTION_VIEW is a constant string.
+-ACTION_VIEW is a standard action that is used to display data to the user, 
+typically by opening a web browser or another appropriate application to handle the data.
+
+
+intent.resolveActivity(...)
+-The resolveActivity method is called on the Intent object (intent). 
+-This method checks whether there is at least one activity that can handle the specified intent. 
+-If there is, it returns a ResolveInfo object representing the activity that will be used to handle the intent; otherwise, it returns null.
+
+
+PackageManager
+-the PackageManager provides information about installed applications on the device.
+
+==========================================================================================================================================================
+
+
+                String[] addresses = {"alkakene7@gmail.com", "monishkene36@gmail.com"};
+
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("*/*");
+                intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+                intent.putExtra(Intent.EXTRA_SUBJECT, "mayur sub");
+                intent.putExtra(Intent.EXTRA_STREAM, urlText);
+                if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivity(intent);
+                }
+
+Intent.ACTION_SEND
+-This action is used to send data to someone
+
+intent.setType("*/*");
+-You are setting the type of data to be sent. In this case, "*/*" is a wildcard that means any type of data can be sent. 
+This is generally used for sending email attachments.
+
+intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+-You are adding the email addresses to the intent. These are the recipients of the email.
+
+intent.putExtra(Intent.EXTRA_SUBJECT, "mayur sub");
+-You are adding the subject of the email. In this example, the subject is set to "mayur sub".	
+
+intent.putExtra(Intent.EXTRA_STREAM, urlText);
+-You are attaching a file to the email. urlText should be a URI pointing to the file you want to attach.
+
+if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+    startActivity(intent);}
+-Before starting the activity (sending the email), you are checking if there is any app on the device that can handle this intent. 
+If there is an app that can handle sending emails, the startActivity(intent) method will be called to initiate the email sending process.
+
+Note :
+-all this extra email , extra subject and extra stream all predefined in intent class...
+-this can be used mainly for mail purpose..
+
+
+
+

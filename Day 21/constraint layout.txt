@@ -1,0 +1,91 @@
+Constraint Layout
+-it is a view group  that is view that holds other view
+-it was discovered in 2016
+-It was created to help reduce the nesting of views and also improve the performance of layout files.
+-it is the more flexible version of relative layout
+-in present situation it has just replace the relative layout
+-so the main advantae of constraint layout is that it adapts the screen size of any phone and tablet..
+-for that we have to use the constraint layout as per use such as if we have made the view in the centre of the screen then we have to 
+ constraint it from horizontally and vertically...
+-there are many attributes in this layout such as for horizontaly there is start_to_start_of then end_to_end_of and for vertically top_to_topof and bottom_to_bottomof
+-constraint layout reduced the need of nested layouts
+-Bias attributes allow you to specify a percentage bias for a view. For example, you can horizontally bias a view to be 30% from the left edge.
+-Constraint Layout often leads to flatter and more optimized view hierarchies compared to nested layouts, improving performance.
+-there is also baseline constraint which is use to bring the two view at same level..
+
+
+
+Notes :
+
+==================================================================================================================================================================
+
+match-constraint or 0dp
+-for this example try to learna again or insted go to start horizontal weight layout
+
+==================================================================================================================================================================
+
+
+constraint_dimensionration : w.16:9
+-w mean width gets adjusted and h means hight gets adjusted.
+-we can see the result in landscape and normal mode
+
+==================================================================================================================================================================
+
+constraint_horizontal_chainstyle = "packed" or "spread" or "spread inside"
+-in this we if we have to arrang them in horizontal then it is comoulsory ti give the end to start of and star to end of properties...
+-in if there are three buttons then we can placed them equally in length if they are horizontally constraint with one another for that we have to give spread attribute
+- in packed they stick with one another
+- and in spread inside right and left buttons will be at the edge and centre button will in the centre.
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 2"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintEnd_toStartOf="@+id/button3"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 3"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+==================================================================================================================================================================
+
+start_toendof and end_tostartof
+-if there are two buttons 1 and 2 and if we type in first button start_toendof (id 2) then it will place just after the id 2
+-if tere are two buttons and if we type second button end_tostartof (id 1) then it will placed just before the 1 button..
+
+==================================================================================================================================================================
+
+horizontal weight and vertical weight
+-to distrubute the weight accordingly that is two give three element equal space
+
+
+==================================================================================================================================================================
+
+guidlines
+-look at the layout for better understading

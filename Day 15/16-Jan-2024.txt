@@ -1,0 +1,8 @@
+
+textutils
+-so this is a class
+-various static methods are present inside this class such as equls,isEmpty and isDigitonly method...
+
+getCheckedRadioButtonId();
+-this is a method.
+-method method return -1 if no button is selected.

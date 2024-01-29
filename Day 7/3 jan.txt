@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+-wrap content = this means if the default size of the layout is 0 and then if we upload 1 image of 4*4 then it will
+acquire the height ad width of 4*4 and hence whatever content we add the layout will adjust its height and width accordingly..
+
+-string.xml file
+-use of gravity = gravity is just like if we have keep our  views  in the linear layout in centre or at the start or at the top , bottom then 
+ignoring its height, width it will just anyhow place all the view in centre or start or bottom whatever we set the condition on true...
+
+manifest.xml = The AndroidManifest.xml file is a crucial file in an Android application that contains essential information about the app. 
+It serves as a kind of blueprint for the Android system, providing details on the app's components, permissions, and configurations. 
+
+
+

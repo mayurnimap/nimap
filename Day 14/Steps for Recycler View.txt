@@ -1,0 +1,55 @@
+Steps for Recycler View
+-in main xml file just drag the recycler view there
+-then create the layout of our choice such as for contact one image and name then image and name should be in linear and orientation should be horizontal
+-then we should create new class and that class should extends to Recyclerview with the datatype <classname.MyviewHolder>
+-because we have made the class as generic then we should create the one more class inside that class and create constructor for it
+-there are three methods to implement in adapter that is  1) oncreate viewholder 
+                                                          2) onbind viewholder 
+                                                          3) get item count
+-then we should take names and images from main.java file to adapter file using constrcutor
+                                                          1) we will create the constrcutor in adapter class
+                                                          2) then in main file we will passed the data and in main file we will  create the constrcutor of adapter class using new keyword
+
+
+                                                                    -working of method 
+
+1)oncreate viewholder - 
+ - the return type of this method is myviewholder so it will return the view
+ - main working of this method is to create the view and return it to the viewholder class
+ - this method return view to the viewholder class which we have made in the 4th point which we called as nested class
+ - then we have to used the layout inflater to  get the data from the parent and stored it in a LayouytInflater datatype and give the variable anything
+ - then use inflater.[variablename](R.layout.[xml layout file name],parent,false)
+ - so in all conclusion in this method we have get the view which we have created in the layout and then return it to the MyViewHolder class 
+
+
+
+==================================================== Myviewholder class ==============================================
+
+- so here as we have get the view so we will find the ids of text and images whatever we have created and then stored it in variable using findviewbyid  method
+
+
+========================================================================================================================
+2) onbind viewholder
+ -here we will use the set method for setting the text and image accroding to our layout
+ -holder.img.setimage(array list variable then [position])
+ -so in this we will set the images and text according to our array position
+
+
+3) get item count
+-here we just have to return the size if its arrat then we should return the length and if its collection then it must be size
+
+
+===================================================================================================================
+
+in main java file 
+-in this first we have to find the recyclerview by using findbyid method and stored it in a variable.
+- after that [variable name].setLayoutManager(new LinearLayoutManager(this)):
+- then [variable name].setAdapter([our created adapter name])
+
+FOR GRID VIEW 
+-we first have to create the object for GridLayoutManager such as GridLayoutManager g = new GridLayoutManager (this, 3)
+- in place of 3 we can type how many columns we want in our grid view
+- - after that [variable name].setLayoutManager(new LinearLayoutManager(this)):
+- then [variable name].setAdapter([our created adapter name])
+
+ 

@@ -1,0 +1,13 @@
+
+===============================================List view=======================================================
+
+Array adapter : 
+- The adapter is a bridge between the User Interface (UI) component and the data source. 
+
+- it is a class of android which help the android to converts data from data sources into view items 
+  that can display the data in different ways like a listview, gridview, spinner, etc.
+
+- SYNTAX : 
+ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Arrayvariable);
+
+

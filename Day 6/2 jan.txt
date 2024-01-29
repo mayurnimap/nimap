@@ -1,0 +1,9 @@
+-creating the conversion app
+-layout constraint practise
+-findview by id (method)
+-setonclick listener (interface)
+-what is toast
+-what is settext
+-what is drawable
+-implement the app using both setonclick method and onclick attribute
+-created app for addition for two numbers

@@ -1,0 +1,21 @@
+
+log.d
+log.e
+
+-why we use log insted of toast
+toast is used when the programmer has to display some message to the user and log is used when programmer want 
+the message to be display only for him in terminal which can be used for debugging and other process..
+
+baseline constraint
+-if the two views are not in same line and  if we have to allign them in same line then we should we go base line constrant which makes view visually lineup...
+
+-intent
+types of intent
+ 1)implicit intent =  this intent is used when user dont have clear idea about the action... such as sharing the song so in this user is not aware that where
+user want to share on instagra , on whatsapp. on facebook or any other app.
+ 2)explicit intent = this intent is used when user have clear idea about the action.. such as playing songs from spotify app or watch a video from youtube..
+
+-use of intent in multiscreen app
+
+
+-created  apps which has 2 activity (screen) such as swtich screen apps.. which take input from first screen  and display to the second screen...

@@ -1,0 +1,54 @@
+Architecture (in simple words it is like seprating each component then we can easily find out the solution and we dont have to disturb the whole project if any error occurs)
+- is is a High-level structure of a software system.
+- if we implmenetd the architecure into project then it is Easier to understand, modify, and maintain
+- it also enables Enables adding resources or adapting to increased load (Scalibility)
+- Protects against vulnerabilities and unauthorized access. (Security)
+- Reduces development and maintenance costs. (Cost effective)
+- Prepares for future changes and updates. (future changes)
+- Provides a roadmap for developers and stakeholders (Documentiton)
+
+
+
+-MVC
+-it stands for model view controller
+-it is the default architecure of android
+-it is used when the size of the app and functioning of the app is too high...
+
+-in the below user is requsting the list of cats so first it will touch the button which is in ui so ui will connect to the controller and ask list fro cat then 
+controller will contact model as it have the logic so model will fetch the data from the database and give it to the controller then controller will update he view 
+with the new data .. and then user can se the list of cats.....
+
+
+1)User Interaction (View):
+-The user interacts with the UI (View), for example, by clicking a button to request a list of cats.
+
+
+2)View Notifies Controller:
+-The View notifies the Controller about the user's action. In your example, it could be a button click event.
+
+
+3)Controller Takes Action (Controller):
+-The Controller receives the notification, processes the user input, and decides what action to take. In this case, it could be requesting a list of cats.
+
+4)Controller Requests Data (Model):
+-The Controller contacts the Model to fetch the data. The Model contains the business logic and data-related operations.
+
+5)Model Fetches Data (Model):
+-The Model fetches the data, for example, a list of cats from a database or some data source.
+
+6)Model Sends Data to Controller (Controller):
+-The Model sends the fetched data back to the Controller.
+
+7)Controller Updates View (View):
+-The Controller updates the View with the new data. It could involve transforming the raw data into a format suitable for display.
+
+8)View Renders Updated UI (View):
+-The View renders the updated UI based on the data provided by the Controller.
+
+9)User Sees Updated UI (View):
+-The user sees the refreshed UI with the list of cats.
+
+Referrence link :
+
+https://www.geeksforgeeks.org/mvc-model-view-controller-architecture-pattern-in-android-with-example/
+-here they have created the new class for logic and intialize it in main java file..

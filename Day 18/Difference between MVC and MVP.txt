@@ -1,0 +1,19 @@
+Key Differences:
+Communication Between Components:
+MVC: The Controller directly manipulates the View.
+MVP: The Presenter instructs the View to update, maintaining a more separated relationship.
+
+View Interface:
+MVC: The View is a concrete class.
+MVP: The View is an interface that the Presenter implements, enhancing testability.
+
+Dependency Direction:
+MVC: The Controller often has dependencies on both the Model and the View.
+MVP: The Presenter has a dependency on the Model, and the View has a dependency on the Presenter.
+
+Responsibilities:
+MVC: The Controller often handles more responsibilities, including direct manipulation of the View.
+MVP: Responsibilities are more evenly distributed, with the Presenter acting as an intermediary.
+
+
+In MVP, the key focus is on better separation of concerns, making components more modular and testable. The Presenter helps in decoupling the View from the Model and manages the flow of information between them.

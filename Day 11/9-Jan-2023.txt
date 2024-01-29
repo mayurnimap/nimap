@@ -1,0 +1,23 @@
+Adapter in Recycle view 
+-an adapter is a crucial component
+-it acts as a bridge between the data source and the UI components
+- You have some data you want to display in your app. It could be a list of items, such as text, images, or a combination of both
+-The adapter takes this data and prepares it for display. It decides how each piece of data should be presented in the UI. For example, if you have a list of names, 
+the adapter determines how each name should appear in a list on the screen
+
+
+ArrayAdapter ad = new ArrayAdapter(this,android.R.layout.simple_list_item_1,arr);
+-here we have created the object of arrayadapter
+-we have passed the three formal argument that is this which mean from the current class then R.layout..... which is inbuild layout in android and then we have passed the reference of array..
+
+Layoutinflator
+-this is used when we have created our own custome layout..
+-by doing this we stored in a variable and with that help of that variable we used it in findviewbyid method...
+-suppose if we directly used findviewbyid then it will get confuse because there are two xml files one is main and other one which we have crated...
+
+ConvertView = ...:
+-convertView is a recycled view that can be reused to display new data. Recycling views improves the performance of adapters, especially in large lists.
+-By reusing views (if available), you save resources compared to inflating a new view for each item.
+
+inflate method 
+-in simple words, inflate is the process of taking your design plan (XML layout) and turning it into a usable object (a View) that you can see and interact with in your app.

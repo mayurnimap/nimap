@@ -1,0 +1,9 @@
+
+-first we have created the git repository in the website using manual.
+-then we have open the gitbash in the project folder
+-then we have initialize the git repository using = git init
+-then add files to stagging area using = git add -A 
+-then commit all the changes using command =  git commit -m"first commit"
+-then git remote add origin https://github.com/your-username/your-repo.git
+-git push -u origin master
+-from next time we can directly use git push and git pull command

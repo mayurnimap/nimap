@@ -1,0 +1,45 @@
+MVP
+-it stands for model view presenter
+-MVP comes into the picture as an alternative to the traditional MVC (Model — View — Controller) architecture pattern. 
+-MVP pattern overcomes these challenges of MVC and provides an easy way to structure the project codes. 
+-MVP (Model-View-Presenter) is an architectural pattern used in Android development for separating the application logic from the user interface.
+
+Key Points of MVP Architecture
+1)Communication between View-Presenter and Presenter-Model happens via an interface(also called Contract).
+2)One Presenter class manages one View at a time i.e., there is a one-to-one relationship between Presenter and View.
+3)Model and View class doesn’t have knowledge about each other’s existence.
+4)In both the MVC and MVP examples, the separation of concerns helps in organizing the code and making it more modular and maintainable. 
+The key difference lies in how the View gets updated. 
+In MVC, the Controller directly manipulates the View, whereas in MVP, the Presenter instructs the View to update.
+
+working flow 
+ user  -> View -> presenter -> model -> presenter -> View (instructs the View to update) -> user 
+          
+                                      
+
+
+in simple words 
+-In the mvp we create  interface and  class..
+-that intrface is also called as contract interface
+The Contract Interface acts as an agreement between the View and the Presenter about what functionalities 
+the View provides and what methods the Presenter can use to update the View.
+-in that interface all the absrtract methods are there
+-and that abstract method we should define or override in the class that we have made...
+
+
+Advantages of MVP Architecture
+-MVP separates the application logic from the user interface, making it easier to maintain and modify the application.
+-MVP architecture Android promotes independent unit testing of the application logic, so it helps in easier detection of the issues.
+-MVP architecture ensures code reusability across the different layers, thereby reducing the efforts and time consumed in the development process.
+
+Disadvantages of MVP Architecture
+-MVP architecture pattern comes with an additional layer of complexity that makes the application a bit difficult to understand.
+-Despite the better maintenance, sometimes more efforts have to be put into building even smaller applications. This eventually increases the cost as well.
+
+Conclusion : the Presenter acts as a mediator, ensuring that the Model and View remain loosely coupled. 
+The Presenter takes care of coordinating between the user input, the data model, and the UI updates. 
+This separation of concerns makes the application more maintainable and testable.
+
+
+Reference links : https://www.scaler.com/topics/mvp-architecture-android/
+                  https://www.geeksforgeeks.org/difference-between-mvc-and-mvp-architecture-pattern-in-android/ (for difference between mvp and mvc)

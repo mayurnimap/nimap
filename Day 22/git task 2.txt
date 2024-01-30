@@ -1,0 +1,6 @@
+
+
+create a branch = git branch [branch name]                         > git branch mayur
+go to that branch = checkout [branch name]                         > checkout mayur
+for coming back master branch = checkout [master]                  > checkout master
+then git push origin [branch name where we have to transfered]     > git push origin mayur

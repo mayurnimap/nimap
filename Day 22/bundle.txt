@@ -1,0 +1,6 @@
+
+
+
+bundle :
+-bundle passing means the data that we are passing is in key value pair
+for eg we have created the app putextra stuff and all....

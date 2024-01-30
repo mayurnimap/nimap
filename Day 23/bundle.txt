@@ -1,0 +1,23 @@
+
+
+
+bundle :
+-bundle passing means the data that we are passing is in key value pair
+-for eg we have created the app putextra stuff and all....
+-Bundle passing is a common technique used in Android development to pass data between different components, such as activities or fragments. 
+ It allows you to package data into a Bundle object and send it along with an Intent or as arguments to a fragment.
+
+
+
+Think of a Bundle as a small container or a bag that you can use to carry some items (data) from one place to another within your Android app. 
+Here are some key points about Bundles in simple terms:
+
+1)Purpose: Bundles are used to pass data between different components of an Android app, such as activities or fragments.
+
+2)Container: A Bundle is like a bag where you can put different types of data, such as strings, integers, or objects.
+
+3)Key-Value Pair: Each piece of data in a Bundle is stored with a unique identifier called a "key." This key helps you retrieve the data later.
+
+4)Usage: You create a Bundle, put your data inside it along with their keys, and then send this Bundle along with an Intent (for activities) or as arguments (for fragments).
+
+5)Retrieving Data: When the receiving component (like another activity or fragment) receives the Bundle, it can extract the data using the keys provided.

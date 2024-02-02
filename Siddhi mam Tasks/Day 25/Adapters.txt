@@ -1,0 +1,37 @@
+
+Adapters
+-Adapter is like the bridge between data source and  android UI components 
+-in simple words it Adapters takes the data from the data source and display it in a UI components 
+-UI components like  1) listview
+                                    2) gridview
+                                    3) spinner
+
+-Data source like       1) Arraylist
+                                   2) Set
+                                   3) Map
+                                   4) cursors
+
+-Types of Adapters 
+                               1) Base Adapter ( it is parent for all adapters)
+                               2) Array Adapter (if we have single list then we can used the array adapters such as list of only names then we can use the array adapter)
+                               3) Custom ArrayAdapter (it is used whenever we need to display a custom list)
+                            
+
+                              -Custome Adapter 
+                                                 > for custom adapter , we always have to create new java class and extends it with  any one adapter ie java class should extend base adapter
+                                                    or array adapter..
+
+===============================================================================================================================================
+
+Array Adapter
+
+-ArrayAdapter is a simple and convenient way to display lists of data in Android applications, especially when the data source is a basic array or list of objects.
+-it directly binds data from an array or a list to the views in the layout file. This means you don't have to create a separate layout file for each item in the list.
+-When using a standard ArrayAdapter, Android provides a default layout for each item in the list. 
+ This layout typically consists of a single TextView to display the string representation of each item in the array.
+-in conclusion whenever we have simple data like array of names and array of number then we should go for array adapters because  we dont have to create any other layout for it.. 
+ in main java file u can just create the array adapter and passed the array variable in it so it will show the name which are their in the arrray...
+
+
+
+

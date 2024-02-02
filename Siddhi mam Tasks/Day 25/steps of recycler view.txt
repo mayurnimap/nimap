@@ -4,8 +4,8 @@ Steps for Recycler View
 -then we should create new class and that class should extends to Recyclerview with the datatype <classname.MyviewHolder>
 -because we have made the class as generic then we should create the one more class inside that class and create constructor for it
 -there are three methods to implement in adapter that is  1) oncreate viewholder 
-                                                                                                2) onbind viewholder 
-                                                                                                3) get item count
+                                                          2) onbind viewholder 
+                                                          3) get item count
 -then we should take names and images from main.java file to adapter file using constrcutor
                                                           1) we will create the constrcutor in adapter class
                                                           2) then in main file we will passed the data and in main file we will  create the constrcutor of adapter class using new keyword
@@ -51,5 +51,3 @@ FOR GRID VIEW
 - in place of 3 we can type how many columns we want in our grid view
 - - after that [variable name].setLayoutManager(new LinearLayoutManager(this)):
 - then [variable name].setAdapter([our created adapter name])
-
- 

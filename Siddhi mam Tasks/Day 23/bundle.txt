@@ -21,3 +21,13 @@ Here are some key points about Bundles in simple terms:
 4)Usage: You create a Bundle, put your data inside it along with their keys, and then send this Bundle along with an Intent (for activities) or as arguments (for fragments).
 
 5)Retrieving Data: When the receiving component (like another activity or fragment) receives the Bundle, it can extract the data using the keys provided.
+
+
+   ------------------------------------------------------------------------  see the code difference o chatgpt -----------------------------------------------------------------------------------------------------
+
+conclusion = in bundle we can store all the data just like storing data in bag and then we can passed it in intent 
+
+https://chat.openai.com/share/51afb18f-f403-4cf8-bf92-4832999aaf79
+
+in bundle we used putString() method to add data  |  in bundle we used getStringExtra()  method retrive the data in second activity
+in intent we used putExtra() method to add data     |  in intent we used putExtra() method retrive the data in second activity

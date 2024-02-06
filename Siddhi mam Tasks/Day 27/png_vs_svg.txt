@@ -1,0 +1,4 @@
+In summary,
+-PNG is a raster image format made of pixels, suitable for complex images like photographs, 
+-while SVG is a vector image format made of mathematical shapes, suitable for simple graphics and scalable illustrations. 
+-SVGs can be scaled to any size without losing quality, making them ideal for responsive designs and high-resolution displays.

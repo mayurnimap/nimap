@@ -1,0 +1,41 @@
+
+Activity 
+
+-  Single focus thing that user can interact.
+- for example activity display information to the user and take input from the user.
+- In simple words activity means screen.
+- Activity has layouts which defines how views should be display.
+
+
+Activity lifecycle
+
+1)Creation: When an Activity is first launched or brought back from the background, the onCreate() method is called. 
+                   This is where initialization tasks like setting up the user interface and preparing resources occur.
+
+2)Starting: After onCreate(), the Activity enters the Started state. Here, it becomes visible to the user, but it's not yet in focus. 
+                  The onStart() method is called during this phase.
+
+3)Resuming: When the Activity comes into the foreground and becomes interactive, it enters the Resumed state. 
+                     The onResume() method is called, and this is where you typically register listeners or resume animations.
+
+4)Paused: If another Activity comes into the foreground, partially covering the current one, the current Activity enters the Paused state. 
+                The onPause() method is called, and it's a good place to save user data or stop animations that consume resources.
+
+5)Stopped: If the Activity is completely hidden by another Activity or if the user navigates away from it, it enters the Stopped state. 
+                  The onStop() method is called, and you can release resources that are not needed while the Activity is not visible.
+
+6)Destroyed: When the system is low on memory or if the user finishes the Activity, it enters the Destroyed state. 
+                     The onDestroy() method is called, allowing you to release resources like network connections or unregister broadcast receivers.
+
+7) The onRestart() method is one of the callback methods in the Android Activity lifecycle. 
+    It's called when an Activity is being restarted after being stopped but before it becomes visible to the user again. 
+   This method is typically invoked when the user navigates back to the Activity from another Activity that was stopped or paused.
+
+
+-onCreate()
+-onStart()
+-onResume()
+-onPause()
+-onStop()
+-onDestroy()
+-onRestart()

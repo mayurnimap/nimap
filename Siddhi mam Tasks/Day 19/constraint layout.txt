@@ -38,6 +38,12 @@ constraint_horizontal_chainstyle = "packed" or "spread" or "spread inside"
 
 ==================================================================================================================================================================
 
+ app:layout_constraintVertical_bias="0.2"
+- above command says that it will placed 20% belove it constraint means whichever constraint we have assigend to it..
+
+=======================================================================================================================================
+
+
 start_toendof and end_tostartof
 -if there are two buttons 1 and 2 and if we type in first button start_toendof (id 2) then it will place just after the id 2
 -if tere are two buttons and if we type second button end_tostartof (id 1) then it will placed just before the 1 button..
@@ -52,3 +58,9 @@ horizontal weight and vertical weight
 
 guidlines
 -look at the layout for better understading
+
+================================================================================================================================================================
+
+android:ems="5"
+-In this example, the width of the EditText will be approximately 5 times the width of the letter "m" in the font, and it will adjust dynamically based on the length of the text it contains.
+-it is very useful when we are getting the text because it will automatic set the text 10 times more than it...

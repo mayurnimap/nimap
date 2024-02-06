@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     {
         Toast.makeText(this, "plz wait.... loading", Toast.LENGTH_SHORT).show();
 
-        Intent i = new Intent(this,MainActivity2.class);
+        Intent i = new Intent(this, MainActivity2.class);
 
         text = findViewById(R.id.editTextText);
 

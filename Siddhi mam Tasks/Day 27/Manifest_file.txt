@@ -1,0 +1,12 @@
+Manifest file 
+-when system starts the app. manifesr helps system to know all the components that exist in the app
+-the components are users permissions such as internet access,camera access, database (Storage) access,phone contact access etc
+-Declaring activities, services,content provider etc
+-declaring api level (which means for what version this app is comfrtable and upto which version these app can run)
+-declare hardware and software used by the app  for example camera, bluetooth or multiscreen
+-in manifest file we can set the icon of our app
+-theme can also be change in the manifest file
+-we can also set the launcher activity in the xml file which mean that when app starts which activity should display first to the user
+-manifest file also include the information such as package name and app name
+-whenever we create the new activity (screen) we should declare it in a manifest file which tell manifest that this activity is the part of our app and can be used by the android system using intent.
+- in short maifest is the sumary of our app 

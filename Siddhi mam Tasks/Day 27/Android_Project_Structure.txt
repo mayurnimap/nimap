@@ -1,0 +1,56 @@
+Android Project Strucutre 
+
+-so there are 8 directories in the android studio.
+ 1) Manifest Directory
+ 2) Java/Kotlin Directory
+ 3) Resource Directory -
+                            4) Drawable Directory  
+                            5) Layout Directory
+                            6) Mipmap Directory
+                            7) Values Directory
+ 8)Gradle Scripts
+
+==============================================================================================
+
+2) Java/Kotlin Directory - 
+   - these Directory contains the java-kotlin files.
+   - these files generally contains the logic of the app..
+   - these directory is also known as the brain of the app.
+
+3) Resource Directory -
+  - The "res" (resources) directory holds all non-code resources used by your app.
+  - in resource directory there are many sub directories such as drawable,layout,mipmap,values.
+
+                           4) Drawable Directory
+                           - In Android development, the "drawable" directory is where you store image files and drawable resources used in your app
+                           -  inside the "drawable" directory, you can include various types of drawable resources, including:
+                                                     > Vector drawable XML files that define scalable graphics.
+                                                     > Shape drawable XML files that define simple geometric shapes, such as rectangles, circles, and lines.
+
+                           5) Layout Directory
+                            - the "layout" directory is used to store XML layout files that define the arrangement and appearance of UI elements, 
+                              such as buttons, text views, images, and more, within your app's screens. 
+
+                           6) Mipmap Directory
+                           - the "mipmap" directory is used to store launcher icons
+
+                           7) Values Directory
+                           - In Android development, the "values" directory is used to store various XML files that define resources 
+                             such as strings, colors, dimensions, and styles used throughout your app.
+
+ 8)Gradle Scripts
+ - these direcotory is used to compiler our whole project at a time
+ - the Gradle scripts Directory in Android project are crucial for configuring and building your app.
+ - They define project settings, dependencies, and build tasks, allowing you to customize the build process and manage your project effectively.
+
+
+
+
+
+
+                                         
+                                           
+
+
+
+

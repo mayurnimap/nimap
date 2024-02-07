@@ -39,3 +39,17 @@ Activity lifecycle
 -onStop()
 -onDestroy()
 -onRestart()
+
+
+                                                                   AppcompatActivity
+
+-  it is a class present inside androidx.appcompat.app package...
+-  AppCompatActivity manages the Android Activity lifecycle..
+- because it has many methods like 
+1)onCreate()
+2)onStart()
+3)onResume()
+4)onPause()
+5)onStop()
+6)onDestroy()
+-all the methods are non-static.

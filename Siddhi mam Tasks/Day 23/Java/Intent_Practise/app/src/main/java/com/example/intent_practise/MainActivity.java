@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, Main2.class);
         i.putExtra(operation, result);
 
-
         startActivity(i);
 
 

@@ -1,0 +1,46 @@
+Component of android
+-there are 4 major components of android
+ 1) Activities
+ 2) Services
+ 3) Broadcast and Receivers
+ 4) Content Providers
+
+1) Activity -
+   - An Activity represents a single screen with a user interface in an Android application.
+   - Activities are the building blocks of Android UI, providing a window in which you can place your UI components.
+   -They are responsible for interacting with the user and handling user events. 
+   - Activities can be thought of as individual tasks that users perform, such as composing an email, browsing the web, or viewing a photo gallery.
+   - Each Activity has its lifecycle methods (onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy()) 
+     that are called by the Android system as the activity transitions between different states.
+   - Activities are typically defined in the AndroidManifest.xml file and can be launched individually or in sequence as part of a task.
+
+2) Services
+  - a service is a component that runs in the background to perform long
+    running operations.
+  - Unlike Activities, Services don't have a user interface, and they run independently of the application's lifecycle.
+  - Services are often used for tasks that need to continue running even when the user switches to another application or when the application is in the background.
+  - Common use cases for services include playing music in the background, downloading files, or performing network operations.
+  - Services have their lifecycle methods (onCreate(), onStartCommand(), onBind(), onUnbind(), onDestroy()) that govern their behavior and execution.
+  - After creating a service's Java/Kotlin file, it should also be declared in the AndroidManifest.xml file to be recognized by the Android system.
+
+  
+
+3) Broadcast  Receivers
+ - Broadcast in android is the system-wide events that can occur when the device starts, when a message is received on the device or 
+   when incoming calls are received, or when a device goes to airplane mode, etc.
+ - Broadcast Receivers are used to respond to these system-wide events.
+ - Broadcast Receivers allow us to register for the system and application events, and when that event happens, then the register receivers get notified
+ - There are mainly two types of Broadcast Receivers:
+                                            I)  Static Broadcast Receivers: These types of Receivers are declared in the manifest file and works even if the app is closed.
+                                            II) Dynamic Broadcast Receivers: These types of receivers work only if the app is active or minimized.
+ - Since from API Level 26, most of the broadcast can only be caught by the dynamic receiver
+
+reference link : https://www.geeksforgeeks.org/broadcast-receiver-in-android-with-example/
+
+4) Content providers
+ - a content provider component supplies the data from one application to other
+ - with the help of it one app can access the data of another app 
+ - Content Providers offer a standard interface for CRUD operations.
+- They are commonly used for accessing common data such as contacts, media files, or structured data in databases. 
+ - such request are handle by the method of contentResolver class
+ 

@@ -1,0 +1,44 @@
+
+GITHUB COMMANDS 
+
+1) to copy the project from the github to local storage that is pc or laptop storage = git clone [project link] 
+2) to gove to the specific folder we should use = cd [path]
+3) to see the all files in the project = ls
+4) to see the hidden files as well then(also we can check if there is git file or not such as .git which is hidden file when we init the repo)  = ls -a
+5) to add the new repository/folder  = mkdir [name]
+6) to change the name of the branch = git branch -M [new name]
+7) to use only git push command instread of git push origin master = git push -u origin master (from next time only do git push it will automatially push to master branch)
+8) to delete the branch  = git branch -d[branch name]
+9) to see the diff between two branch that is master and dummy = git diff master (do this if ur in the dummy branch or vice versa)
+10) to marge our branch with master = gir merge master (u should be in ur own branch)
+11) if we have done changes in the online and we already have downloaded or clone that project in our local but now we have to make changes which have in online
+      so then we should use pull command that is = git pull origin master
+12) to undo the stagging chages means undo the  adding changes =  to particular file  - git reset [file name]
+                                                                                                                  to all file  - git reset
+13)to undo the latest commit changes  = git reset HEAD~1  
+14)to see all the commit changes that we have made = git log
+15) after seeing our commit changesby using git log we will get the hash of each commit there 
+      then with the help of that hash we can easily undo any commit that we have made = git reset [hash]
+16) to undo the chages from one commit that user has made  till the present one = git reset --hard[hash]
+17) to quit the session = q
+
+  ------------------------------------------------------TO MARGE THE CHANGES IN TO THE MAIN BRANCH------------------------------------------------------------------------------------
+1) 1st Way
+
+
+PR (pull request)
+- this happens when we have done something changes in our branch and push that changes to our branch then it will create the requist in the git online
+  so we should merge it with main in online section
+- now even if u merge it with main in the online then u will have to pull that project into ur local project so for that u have to use = git pull origin master
+-with the help of above command - main branch(online)=main branch(offline) in short our git and local projecr are sync perfectly now 
+
+2) 2nd Way
+
+with command
+-during these there is a situatio that occurs when git is unable to automatically resolve the difference in code between two commits
+ for eg suppose u r in main branch and u have made the changes in second line of code by typing mayur is king and the other  branch user has also make changes
+ in the same line by typing mayu is queen then when u try to merge it with main like ( git merge main) then it will show merge conflict because git is unable to decide
+ which changes he should accept
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 

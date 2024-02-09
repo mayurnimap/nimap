@@ -1,0 +1,28 @@
+
+OOPS : 
+
+ - It stands for object oriented programming laguage.
+ - Kotlin is considered a fully object-oriented programming language coz it does not have any static keyword
+ - it helps the programmer to correlate the real world scenerios into programming world scenerios
+ - there are 4 principle of oops that are -
+                                                                    1) Encapsulation (getter and setter method)
+                                                                    2) Inheritance
+                                                                    3) Polymorphism
+                                                                    4) Abstraction
+
+1) Encapsulation
+ 
+ - we dont set any getter and setter method then by default compiler will automatically set it
+ - for further explanation go to oops project files 5
+
+2) Inheritance
+
+- Child class acquring the state and behaviour of parents class in know as inheritance.
+- Any is the superclass of all the classes that we made in kotlin just like object class in java
+- just like object it has also methods like equals,tostring and hashcode
+- and we can orrride that method
+
+3) Polymorphism
+ 
+- in this, parents class can called the method of child class which are common
+

@@ -1,0 +1,43 @@
+
+Retrofit
+- Retrofit is a handy tool that makes it simple for your Android app to talk to the internet and get the data it needs, 
+  while keeping your app safe, fast, and easy to build. 
+- Retrofit makes it easy for your Android app to talk to the internet and get data from web servers.
+- When you get data from the internet (like JSON), Retrofit helps you turn it into usable information for your app using GsonconverterFactory 
+  It also helps you send data back to the server in the right format .
+- It can handle getting data from the internet without slowing down your app. 
+- Whether you're making a small app for yourself or a big app for lots of people, Retrofit can handle it. 
+  It's easy to use for simple projects and powerful enough for complex ones.
+
+Steps for making the Retrofit
+- first u have to add the depedencies in gradle built section
+- then an android manifest file add permissio of internet
+- then we make a model class (Constrcutor, getters and setters)
+- use the same variable and names as web servers/api for better functioning
+- if we use other names then we should use serializedname tag
+- then make the retrofit class and make static method of retrofit  in where we are return the api interface
+- in that method make the object for retrofit..
+
+public class Retrofitclient {
+
+    private static final String BASE_URL = "https://gorest.co.in/";
+    private static Retrofit retrofit = null;
+
+    public static Apiinterface getRetrofitClient()
+    {
+        if(retrofit==null)
+        {
+            retrofit = new Retrofit.Builder()
+                    .baseUrl(BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
+        }
+
+        return retrofit.create(Apiinterface.class);
+    }
+}
+
+- then make the interface and in that interface use the get method and remaining url because in 
+  retrofit class last line we are returning retrofit including apiinterface that mean remaning url in it.
+
+- lastly if u have used the recycler view then make the adapter for it..... 	
+
+ref links : https://www.topcoder.com/thrive/articles/retrofit-library-in-android

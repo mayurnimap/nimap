@@ -2,7 +2,6 @@ package com.example.broadcast_receiver_1;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.media.AudioManager;

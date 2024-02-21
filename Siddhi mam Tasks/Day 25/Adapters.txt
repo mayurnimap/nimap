@@ -1,10 +1,10 @@
 
 Adapters
--Adapter is like the bridge between data source and  android UI components 
--in simple words it Adapters takes the data from the data source and display it in a UI components 
+-Adapter is like the bridge between data source and  android UI components.
+-in simple words it Adapters takes the data from the data source and display it in a UI components. 
 -UI components like  1) listview
-                                    2) gridview
-                                    3) spinner
+                                   2) gridview
+                                   3) spinner
 
 -Data source like       1) Arraylist
                                    2) Set
@@ -30,7 +30,7 @@ Array Adapter
 -When using a standard ArrayAdapter, Android provides a default layout for each item in the list. 
  This layout typically consists of a single TextView to display the string representation of each item in the array.
 -in conclusion whenever we have simple data like array of names and array of number then we should go for array adapters because  we dont have to create any other layout for it.. 
- in main java file u can just create the array adapter and passed the array variable in it so it will show the name which are their in the arrray...
+ in main java file u can just create the array adapter and passed the array variable in it so it will show the name which are their in the arrray.
 
 
 

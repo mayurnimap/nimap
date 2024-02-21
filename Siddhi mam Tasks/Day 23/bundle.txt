@@ -2,10 +2,10 @@
 
 
 bundle :
--bundle passing means the data that we are passing is in key value pair
--for eg we have created the app putextra stuff and all....
+-bundle passing means the data that we are passing is in key value pair.
+-for eg we have created the app putextra stuff and all.
 -Bundle passing is a common technique used in Android development to pass data between different components, such as activities or fragments. 
- It allows you to package data into a Bundle object and send it along with an Intent or as arguments to a fragment.
+ It allows you to package data into a Bundle object and send it along with an Intent or as arguments to a fragment..
 
 
 
@@ -25,7 +25,7 @@ Here are some key points about Bundles in simple terms:
 
    ------------------------------------------------------------------------  see the code difference o chatgpt -----------------------------------------------------------------------------------------------------
 
-conclusion = in bundle we can store all the data just like storing data in bag and then we can passed it in intent 
+conclusion = in bundle we can store all the data just like storing data in bag and then we can passed it in intent. 
 
 https://chat.openai.com/share/51afb18f-f403-4cf8-bf92-4832999aaf79
 

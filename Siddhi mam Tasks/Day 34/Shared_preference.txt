@@ -1,0 +1,48 @@
+
+SHARED PREFERENCE
+
+- SharedPreferences in Android Studio is a simple key-value pair storage system that allows you to store small amounts of primitive data
+- Data types types such as integers, floats, strings, booleans, etc. persistently across app launches. 
+- It's commonly used for storing user preferences, settings, or any other data that needs to 
+  persist even if the app is closed and reopened.
+
+STEPS FOR SHARED PREFERENCE
+
+-SharedPreferences sharedPreferences = getSharedPreferences("my_preferences", Context.MODE_PRIVATE);
+
+
+// Writing data to SharedPreferences  
+
+SharedPreferences.Editor editor = sharedPreferences.edit();
+editor.putString("username", "john_doe");
+editor.putInt("age", 25);
+editor.putBoolean("is_logged_in", true);
+editor.apply();
+
+-to add the data we should always use the edit mthid from share preference instance.
+
+// Reading data from SharedPreferences
+
+String username = sharedPreferences.getString("username", "");
+int age = sharedPreferences.getInt("age", 0);
+boolean isLoggedIn = sharedPreferences.getBoolean("is_logged_in", false);
+
+-here we have use get method to read the data
+
+// Using the retrieved data
+
+Log.d("SharedPreferences", "Username: " + username);
+Log.d("SharedPreferences", "Age: " + age);
+Log.d("SharedPreferences", "Is Logged In: " + isLoggedIn);
+
+
+
+
+
+
+
+
+
+
+https://chat.openai.com/c/2d51d335-a586-4d85-9f48-0ea767fea98c
+https://chat.openai.com/c/e2642479-531c-49f9-9146-8e6a49022526	

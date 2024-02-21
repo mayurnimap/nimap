@@ -23,6 +23,7 @@ Component of android
   - Services have their lifecycle methods (onCreate(), onStartCommand(), onBind(), onUnbind(), onDestroy()) that govern their behavior and execution.
   - After creating a service's Java/Kotlin file, it should also be declared in the AndroidManifest.xml file to be recognized by the Android system.
 
+
   
 
 3) Broadcast  Receivers
@@ -33,6 +34,7 @@ Component of android
  - There are mainly two types of Broadcast Receivers:
                                             I)  Static Broadcast Receivers: These types of Receivers are declared in the manifest file and works even if the app is closed.
                                             II) Dynamic Broadcast Receivers: These types of receivers work only if the app is active or minimized.
+- after creating broadcast receiver it should be declared in the manifest file
  - Since from API Level 26, most of the broadcast can only be caught by the dynamic receiver
 
 reference link : https://www.geeksforgeeks.org/broadcast-receiver-in-android-with-example/

@@ -8,7 +8,7 @@
 
 3. There can be more than one fragment in an activity. Fragments represent multiple screen inside one activity.
 
-4. We can add, replace or remove Fragment’s in an Activity while the activity is running. 
+4. We can add, replace or remove Fragment’s in an Activity while the activity is running.
    For performing these operations we need a Layout(Relative Layout, FrameLayout or any other layout) in xml file and then replace 
    that layout with the required Fragment.
 

@@ -1,7 +1,7 @@
 
 Activity 
 
--  Single focus thing that user can interact.
+- Single focus thing that user can interact.
 - for example activity display information to the user and take input from the user.
 - In simple words activity means screen.
 - Activity has layouts which defines how views should be display.

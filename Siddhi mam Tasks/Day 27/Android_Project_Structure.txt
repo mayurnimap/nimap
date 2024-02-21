@@ -8,7 +8,7 @@ Android Project Strucutre
                             5) Layout Directory
                             6) Mipmap Directory
                             7) Values Directory
- 8)Gradle Scripts
+ 8) Gradle Scripts
 
 ==============================================================================================
 

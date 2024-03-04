@@ -19,7 +19,7 @@ editor.putInt("age", 25);
 editor.putBoolean("is_logged_in", true);
 editor.apply();
 
--to add the data we should always use the edit mthid from share preference instance.
+-to add the data we should always use the edit method  from share preference instance.
 
 // Reading data from SharedPreferences
 

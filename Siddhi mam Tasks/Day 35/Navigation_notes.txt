@@ -1,0 +1,45 @@
+
+DIFFERENCE BETWEEN INTENTS AND NAVIGATION COMPONENT
+
+﻿• In Intent, you specify the target activity by its class name. In contrast, the Navigation Component enables declarative navigation by defining navigation paths 
+  and destinations allowing for a more abstract and organized approach to navigation.
+• Intents are primarily used for transitioning between activities while navigation component navigates
+ between fragments within a single activity, which is often a more efficient.
+• In Intents, developers must manually manage the back stack while navigation component simplifies back stack management by automatically handling the
+ navigation
+
+
+IN NORMAL WORDS :
+
+- in intent we mention the name of the class that which class we have to go but in navigation we define the path of the graph and then from graph it directed towards
+  the layout file
+
+- intent are mostly used for activities and navigation component are mostly and should be use for fragment for better result
+
+- in intent , if user press back then which screen we should display that work developer has to do manually but in navigation that work is done by implicitely means 
+ that is done automatically 
+
+
+
+THERE IS 3 COMPONENTS IN NAVIGATION
+
+1) NAV GRAPH
+2) NAV HOST
+3) NAV CONTROLLER 
+
+NAV GRAPH
+- A nav_graph.xml contains all navigation- related information in one centralized location.
+-This includes all the individual content areas within your app, called destinations, as well as the possible paths that a user can take through your app.
+
+﻿NAV HOST
+- A NavHost is a container within your app's layout(activity_main.xml) where you can load and manage different destinations.
+- It acts as a host for your app's navigation.
+
+﻿
+NAV CONTROLLER
+- A NavController is a component that manage navigation between different destinations within your app (MainActivity).
+- It allows you to programmatically control and navigate through your app's user interface.
+- It serves as a navigation coordinator.
+
+
+https://www.youtube.com/watch?v=yWWuOqFRwfg

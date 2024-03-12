@@ -1,22 +1,29 @@
-    package com.example.navigation_components
+package com.example.room_database
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupActionBarWithNavController
 
 class MainActivity : AppCompatActivity() {
 
-
-    private lateinit var navController : NavController
-
+    private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        navController = findNavController(R.id.navHostFragmentContainerView)
+
+        val navController = findNavController(R.id.fragmentContainerView2)
+
         return navController.navigateUp() || super.onSupportNavigateUp()
+
     }
+
 }

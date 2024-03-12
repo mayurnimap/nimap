@@ -45,4 +45,15 @@ Log.d("SharedPreferences", "Is Logged In: " + isLoggedIn);
 
 
 https://chat.openai.com/c/2d51d335-a586-4d85-9f48-0ea767fea98c
-https://chat.openai.com/c/e2642479-531c-49f9-9146-8e6a49022526	
+https://chat.openai.com/c/e2642479-531c-49f9-9146-8e6a49022526
+
+for difference between apply and commit see this image.....
+
+what is synchronous ?
+-when we want to execute two method and if first method is taking time to execute and because of that second method is uable to execute 
+that situation is called as synchronous
+
+what is asynchronous ?
+-when we want to execute two method and that methods start to execute at the same time and whichever gives the output first that will be display then that situtation
+ is called as asynchronous
+	

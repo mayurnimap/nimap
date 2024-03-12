@@ -9,4 +9,4 @@ Manifest file
 -we can also set the launcher activity in the xml file which mean that when app starts which activity should display first to the user
 -manifest file also include the information such as package name and app name
 -whenever we create the new activity (screen) we should declare it in a manifest file which tell manifest that this activity is the part of our app and can be used by the android system using intent.
-- in short maifest is the sumary of our app 
+-in short maifest is the sumary of our app 

@@ -1,0 +1,32 @@
+
+Room Database
+
+-Room provides a structured way to define your database schema, 
+ which is basically the blueprint for how your data is organized.
+
+- With Room, you can easily perform operations like storing, retrieving, updating, and deleting data in your app. 
+  It also helps manage things like data consistency and performance, so your app runs smoothly.
+
+- In simple words, Room database is like a smart storage system for your app's data, 
+  making it easier for you to manage and work with information within your Android app.
+
+- Room reduces boilerplate code, improves code readability, and helps manage database-related tasks efficiently.
+
+- It simplifies the process of working with databases in Android apps by offering three main components:
+
+CONCLUSION = IT IS USED TO SAVE THE DATA IN DATABASE THAT IS LOCAL STORAGE NOT ON THE SERVER
+
+======================================================================================================================================================================
+
+1) Entity: 
+
+ An entity represents a table in the database. It's like defining the structure of your data. 
+ Each entity class corresponds to a table that means one class one table , and each field in the class represents a column in that table.
+
+2) DAO (Data Access Object): 
+  DAOs are interfaces or abstract classes where you define methods to interact with your database. 
+  These methods specify the SQL queries needed to perform operations like inserting, updating, deleting, and querying data from the database.
+
+3) Database: 
+ The database is a container for all the tables defined as entities and serves as the main access point for the underlying SQLite database. 
+  It's where you define the database's version number and specify which entities are included.

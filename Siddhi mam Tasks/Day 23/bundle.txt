@@ -29,5 +29,5 @@ conclusion = in bundle we can store all the data just like storing data in bag a
 
 https://chat.openai.com/share/51afb18f-f403-4cf8-bf92-4832999aaf79
 
-in bundle we used putString() method to add data  |  in bundle we used getStringExtra()  method retrive the data in second activity
-in intent we used putExtra() method to add data     |  in intent we used putExtra() method retrive the data in second activity
+in bundle we used putString() method to add data  |  in bundle we used getString()  method retrive the data in second activity
+in intent we used putExtra() method to add data     |  in intent we used getStringExtraa() method retrive the data in second activity

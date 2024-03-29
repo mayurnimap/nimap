@@ -1,0 +1,19 @@
+
+
+Live Data
+- it is a observable data holder class
+- as the name suggest it observe whatever data is changing in the class if there are changes in the data  then it will give update/inform/notify to the observer
+- in simple words it is a place where we can store the data and observe it
+- for example if our activity or fragment is destory then we will get the update related to it
+- live data will only be send if they are in their active state
+
+there are two type of live data 
+1) mutable live data (data can be change)
+   - val facts = MutableLiveData<String>("this is fact")
+
+
+2) live data  (data can't be change) in simple words it is read only data and only can be observe
+
+
+reference link :
+https://www.youtube.com/watch?v=UGBHHkUyL5c

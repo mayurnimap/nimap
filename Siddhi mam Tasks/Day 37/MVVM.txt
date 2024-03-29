@@ -1,0 +1,33 @@
+
+
+
+Model:
+- The Model represents the business logic and data of the application.
+-  It encapsulates the data and operations that manipulate the data, such as fetching data from a database or performing calculations.
+-  model does not have any direct connection with the view 
+- if any changes made in the model then it notifies to Viewmodel and then with the help of Viewmodel , views are going to change   
+
+ 
+
+
+View:
+-The View is responsible for displaying the user interface elements to the user.
+- It typically consists of activities, fragments, and layout files.
+- The View should not contain business logic but instead delegates this responsibility to the ViewModel.
+
+
+ViewModel:
+-The ViewModel acts as a mediator between the View and the Model.
+- It retrieves data from the Model and prepares it for presentation in the View.
+- The ViewModel does not have direct knowledge of the View but exposes data and actions via observable properties and commands.
+- It can also hold UI-related data that survives configuration changes, such as screen rotations.
+-The ViewModel typically does not contain Android-specific code or references to Android framework classes, promoting testability and separation of concerns.
+
+
+- In summary, the MVVM architecture separates concerns by dividing the application into three distinct components: Model, View, and ViewModel. 
+ This separation promotes maintainability, testability, and reusability of code.
+
+
+reference link : 
+https://builtin.com/software-engineering-perspectives/mvvm-architecture
+

@@ -12,7 +12,8 @@ interface UserDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     //if there is new or same user then ignore this
-    suspend fun addUser(user:User)
+    suspend fun addUser(user: User)
+
 
     @Query("SELECT * FROM user_table ORDER BY id ASC")
     fun readAllData(): LiveData<List<User>>

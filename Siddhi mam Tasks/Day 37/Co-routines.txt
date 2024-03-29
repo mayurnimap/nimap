@@ -1,0 +1,141 @@
+
+PROGRAMME
+
+- whenever we want to run our programme there is a process 
+- in that process there is execution of code 
+- that execution of code contains thread
+- each process can have one thread compulsory and it can have multiple threads
+
+SEQUENTIAL EXECUTION
+
+- in sequential execution , the instruction are execute step by step or we can say line by line
+- suppose there are 4 instrctions then they will execute step by step but we know that second instrcution take more time and because of that third instrction is also 
+  not going to execute as all the instruction are on same thread so to solve this problem we give separate thread to second instruction.
+- one process can have multiple threads and we can assign separate tasks to each thread 
+- for eg = in ms office when we type there are two threads running in which one is taking the typing input and second thread is checking the spelling mistake
+
+
+IO OPERATIONS
+- When we are taking data from api or sending data to api then that operations is called as IO operations.
+
+
+======================================================================================================================================================
+
+- suppose we are taking data from api and we have assign that work to separate thread so when there is delay in response from api then at that time thread will be of no use and it will be at the halt
+ because thread will have no work between that time as we knoe thread will wait that when there are going to get the response from api and when thread is going to do their work so most of the time threads
+ are in waiting state.
+- so to encounter this problem, when the thread is in waiting state we can assign some other tasks to that thread
+- and if response comes and our main thread is busy in some other task which we have assign then we can take one more thread from thread pool to continue that api work 
+
+
+CO-ROUTINES
+- when we transfer our thread to perform diffferet different tasks then that process is called as co-routines 
+- Coroutines typically refer to a single-threaded programming paradigm where a single thread executes multiple tasks cooperatively. In other words,
+  coroutines allow you to write code that can be paused and resumed, enabling the execution of multiple tasks within a single thread without the need for parallelism.
+- so the above process is called as co-routines
+- co-routines are executed inside the thread 
+- co-routines are also called as co-operative functions 
+- one thread can have multiple co-routines
+
+ 	
+
+LOOPER 
+
+What is Looper?
+Looper is a class which is used to execute the Messages(Runnables) in a queue. Normal threads have no such queue, 
+e.g. simple thread does not have any queue. It executes once and after method execution finishes, the thread will not run another Message(Runnable).
+
+Where we can use Looper class?
+If someone wants to execute multiple messages(Runnables) then he should use the Looper class which is responsible for creating a queue in the thread. 
+For example, while writing an application that downloads files from the internet, we can use Looper class to put files to be downloaded in the queue.
+
+How it works?
+There is prepare() method to prepare the Looper. Then you can use loop() method to create a message loop in the current thread and now your Looper 
+is ready to execute the requests in the queue until you quit the loop.
+
+WHY WE SHOULD USED CO-ROUTINES
+- as we can create a normal thread in java/kotlin and run a tasks on that particular thread but we can make limited quantity of thread in a particular programme and thread take 
+  large amount of space because one thread takes approx 2mb of space..
+- its depends on ur system that how much threads u can make 
+- context  swtiching is also difficult in threads
+- context swiching means one single thread we have used in the backround thread  and now we have to use that thread now in main thread so this process is called
+  as context switching
+
+
+NOTE : 1) there is no co-routines option in java 
+            2) co-routines are just like lightweight threads but not threads
+            3) co-routines runs on top of threads
+
+================================================================================================================================================
+
+TO IMPLEMENT CO-ROUTINES WE HAVE 
+
+1) co-routines scope   = ( decides the lifetime of co-routine based on some components )
+2) co-routines context = ( defines on which threads we r going to execute ) 
+
+Explanation  : so as we know co-routines runs indefinately so to give lifetime to it we have to used scope .. suppose of we have to stop our at certain time so using scope is mandatory.. there are many types of scopes
+which have diffeent different lifetime ... such as global scope so it will run until the result get and it is generall not recommended
+
+
+DISPATCHER
+
+- it states that ...there  are some set of  threads ..only on this threads, launch/Execute your co-routines 
+
+   PRE-DEFINED DISPATCHERS
+ 1) Dispatchers.IO  (to run the Io operation)
+ 2) Dispatchers.Main (if we have to launch our co-routine on main thread)
+ 3) Dispatchers.Default 
+
+=============================================================================================================================================
+
+SUSPEND KEYWORD
+
+- co-routines helps to implement the functionality that can be suspended and later resume at specific points without blocking of the thread
+- by prefixing the suspend keyword  with funtion/method helps the co-routine to suspend the computation at a particular point 
+- suspending function can only be called with the help of co-routine 
+- in suspend function we can use yield() function which says that there is some other operation such as IO going to execute after this 
+ so u can do other tasks is there is any other co-routine which has to be execute on same thread
+
+for example : suspend fun task1(){
+                        log.d(start task1)
+                        yield()
+                        log.d(end task1) 
+                     }
+
+                      suspend fun task2(){
+                        log.d(start task2)
+                        yield()
+                        log.d(end task2) 
+                     }
+
+                   fun main(){
+                    
+                    CoroutineScope(Dispatchers.Main).launch {
+                    task1()
+                    }
+
+                   CoroutineScope(Dispatchers.Main).launch {
+                    task2()
+                    }
+}
+
+
+IMP NOTES : suspend works like if there is any work which does not  need thread then it look for the other co-routines of same thread .. suppose if we add delay(1000) in place of yield() then suspend function will automatically detect that
+there is delay and it will look for the other co-routine ....and output will be the same.... 
+
+OUTPUT :START TASK 1
+                  START TASK 2
+                  END TASK 1
+                  END TASK 2
+          
+
+  
+   
+
+
+
+
+
+
+reference link :
+https://www.youtube.com/watch?v=Mi5DEm45XlM&list=PLRKyZvuMYSIN-P6oJDEu3zGLl5UQNvx9y

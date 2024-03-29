@@ -24,9 +24,7 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
 
-        Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setData(Uri.parse("www.google.com"));
-        startActivity(intent);
+
 
 
 

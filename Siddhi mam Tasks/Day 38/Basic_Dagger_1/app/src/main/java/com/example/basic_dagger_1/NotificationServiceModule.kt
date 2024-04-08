@@ -6,14 +6,14 @@ import javax.inject.Named
 
 
 @Module
-class NotificationServiceModule {
+class NotificationServiceModule () {
 
 
 
     @Provides
-    fun getMessageService():NotificationService
+    fun getMessageService(retryCount:Int):NotificationService  // this methods now want int parameter and int parameter in avaiable with dagger in register component so it will use that parameter
     {
-        return MessageService()
+        return MessageService(retryCount)
     }
 
 //    @Provides
@@ -35,9 +35,4 @@ class NotificationServiceModule {
 
 //    as we can see now we have added the named anotation for better understanding and tell the dagger that which instance should be called
 //    but with this there is one issue that there can be typo problem so for that we have made our own annotation and use that that is Emailqualifier
-
-
-
-
-
 }

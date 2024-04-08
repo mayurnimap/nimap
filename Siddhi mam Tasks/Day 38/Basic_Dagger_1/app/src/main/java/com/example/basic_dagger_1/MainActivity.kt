@@ -23,9 +23,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        
+//        val component = DaggerUserRegistrationComponent.builder().build
+//        val component = DaggerUserRegistrationComponent.builder()notificationServiceModule(NotificationServiceModule()).build
 
-        val component = DaggerUserRegisterComponent.builder().build()
+        val component = DaggerUserRegisterComponent.factory().create(3)
+
         component.inject(this) // this method is in component which takes main activity as a parameter and out of main activity we use all the variables such as emailservice and userregisterservice
         userRegistrationService.registerUser("mayurkkene@gmail.com","123456")
         notificationService.send("aa","aa","aa")

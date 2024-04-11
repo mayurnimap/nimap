@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                                              // so we have 1 second delay per method so if we dont use async here then it will take 2 seconds to perform but with the help of async we can
                                              // get th output in 1 seconds and after getting both the values we will print 
             var b = async { getlikes() }
-            Log.d(TAG,"followers-,${a.await()},likes - ${b.await()}")
+            Log.d(TAG,"followers-${a.await()},likes - ${b.await()}")
         }
     }
 

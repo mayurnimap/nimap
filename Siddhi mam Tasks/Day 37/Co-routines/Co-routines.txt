@@ -159,14 +159,7 @@ Coutines hier-archy
 - but if we want to run the co-routine on other threas such as our parent thread is dispatchers.main and child thread we want run o dispatchers.io then we can mention it explicitelt ..
 - this is done only when we want to run on another thread if we wanr run on same thread then we dont to mention it explicitely 
 
-for eg = private suspend fun printFollowers(){
 
-         CoroutineScope(Dispatchers.IO).launch {
-            var a = async { getFollowers() }  
-            var b = async { getlikes() }
-            Log.d(TAG,"followers-,${a.await()},likes - ${b.await()}")
-        }
-    } 
 
 ====================================================================================================================================================
 
@@ -187,7 +180,9 @@ with context and run blocking functions
 - in this it is compulsory to pass the context that dispatcher.io and others
 - this function is used when we have to execute some statement line by line even if there is any delay in that statement
 - it work is to block the co-routine because if we dont block co-routine then it will try to execute other statement because current statement is taking time
--The purpose of withContext is primarily to switch the coroutine's context (thread) temporarily for a specific block of code
+- The purpose of withContext is primarily to switch the coroutine's context (thread) temporarily for a specific block of code
+- It allows you to temporarily switch to a different coroutine context, such as switching to a background thread for performing IO-bound operations.
+- It's commonly used when you need to perform a specific operation in a different context without affecting the surrounding code.
 
 Chat-Gpt Notes 
 
@@ -243,10 +238,10 @@ fun main()
 
 Output = Hello
 
--In Kotlin, when you launch a coroutine using GlobalScope.launch, it creates a coroutine that runs independently of the main program. 
- When the main function completes, the program exits, and any coroutines launched using GlobalScope are cancelled along with it.
+- In Kotlin, when you launch a coroutine using GlobalScope.launch, it creates a coroutine that runs independently of the main program. 
+ - When the main function completes, the program exits, and any coroutines launched using GlobalScope are cancelled along with it.
 - therefor we are getting only hello output coz after priting hello it will end the function and because of that co-routine also gets cancel
-- to aoid this we use run blocking ..  as the name sugges it will block the main thread until all the co-routine gets compeleted... 
+- to avoid this we use run blocking ..  as the name sugges it will block the main thread until all the co-routine gets compeleted... 
 - simple it does allow our main thread to teminate until all the co-routines gets compeleted 
 - here is the code to catch that 
   

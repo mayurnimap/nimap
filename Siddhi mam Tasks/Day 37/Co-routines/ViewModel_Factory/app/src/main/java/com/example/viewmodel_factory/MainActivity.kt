@@ -14,5 +14,6 @@ class MainActivity : AppCompatActivity() {
 
 
         var viewModel = ViewModelProvider(this,viewModelFactory).get(MyViewModel::class.java)
+
     }
 }

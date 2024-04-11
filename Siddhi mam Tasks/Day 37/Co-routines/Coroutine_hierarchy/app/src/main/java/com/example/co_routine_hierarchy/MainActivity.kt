@@ -42,6 +42,6 @@ class MainActivity : AppCompatActivity() {
 
         parentJob.join()  // so here we can see that until our child co-routine is not completed parents completed will not print because we have use the join method
 
-        Log.d(TAG,"parents completed ")
+        Log.d(TAG,"parents completed")
     }
 }

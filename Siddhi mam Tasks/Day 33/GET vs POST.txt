@@ -1,0 +1,3 @@
+
+
+https://www.javatpoint.com/get-vs-post#:~:text=GET%2D%20It%20requests%20the%20data,data%20to%20a%20specified%20resource

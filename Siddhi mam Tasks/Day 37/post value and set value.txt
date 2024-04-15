@@ -1,0 +1,27 @@
+
+SET VALUE AND POST VALUE 
+
+-In Android development, setValue() and postValue() are methods used to update the 
+value of MutableLiveData in the ViewModel.
+
+1)
+setValue(): This method is used to set the value of MutableLiveData synchronously on the main thread. It should be called from the main thread itself. 
+                     If it's called from a background thread, it will throw an exception
+
+eg : myMutableLiveData.value = newValue
+
+2)
+postValue(): This method is used to set the value of MutableLiveData asynchronously from a background thread. It can be called from any thread, including the main thread. 
+                       postValue() schedules the value to be set on the main thread at a later time. It's often used when updating LiveData from a background thread, such as inside a coroutine 
+                      or a background task.
+
+eg : myMutableLiveData.postValue(newValue)
+
+Here's a quick summary of the differences between setValue() and postValue():
+
+- setValue() updates the value synchronously on the main thread and should be called from the main thread itself.
+- postValue() updates the value asynchronously from a background thread and can be called from any thread.
+
+In most cases, you'll use setValue() when updating LiveData from the main thread and postValue() when updating LiveData from a background thread to ensure thread safety.
+
+

@@ -207,6 +207,9 @@ Chat-Gpt Notes
 
 7) Cancellation handling: Like other suspending functions, withContext respects cancellation. If the coroutine is canceled while suspended in withContext, it will be canceled when it resumes execution.
 
+Note : while join blocks the thread until the coroutine completes.....	 async, await(), and withContext do not directly block the thread. Instead, 
+            they suspend the coroutine, allowing the underlying thread to be used for other tasks until the suspended coroutine is ready to resume.
+
 CODE EXAMPLE  : 
 
 private suspend fun executeTask()
@@ -243,6 +246,7 @@ Output = Hello
 - therefor we are getting only hello output coz after priting hello it will end the function and because of that co-routine also gets cancel
 - to avoid this we use run blocking ..  as the name sugges it will block the main thread until all the co-routine gets compeleted... 
 - simple it does allow our main thread to teminate until all the co-routines gets compeleted 
+- async and with context doesn't block the thread 
 - here is the code to catch that 
   
   fun main() {

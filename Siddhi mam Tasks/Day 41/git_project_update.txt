@@ -1,0 +1,14 @@
+1) Use the git fetch command to download the latest changes from the remote repository without integrating them into your local branch.
+  - git fetch origin
+
+2) After fetching changes, you can merge them into your local branch using git merge. This combines the changes from the remote branch into your current branch.
+ - git merge origin/main
+
+note : Replace main/origin with the name of the branch you want to merge changes
+
+3) git pull origin main
+
+4) git commit -m "Merge changes from remote repository"
+
+5) git push origin main
+

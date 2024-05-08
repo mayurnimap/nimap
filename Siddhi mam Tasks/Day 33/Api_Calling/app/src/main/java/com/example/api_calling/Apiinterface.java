@@ -10,4 +10,6 @@ public interface Apiinterface {
 
     @GET("/public/v2/users")
     Call<List<Data>> getData();
+
+
 }

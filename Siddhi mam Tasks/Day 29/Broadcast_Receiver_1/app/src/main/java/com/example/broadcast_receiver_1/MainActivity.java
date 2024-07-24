@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     @Override
@@ -26,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         IntentFilter filter = new IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED);
         registerReceiver(airplaneModeChangeReceiver,filter);
-
     }
 
     @Override

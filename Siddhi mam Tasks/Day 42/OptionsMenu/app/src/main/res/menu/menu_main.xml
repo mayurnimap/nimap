@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.javatpoint.com.kotlinoptionsmenu.MainActivity">
+    <item
+        android:id="@+id/itFacebook"
+        android:title="Facebook"
+        />
+    <item
+        android:id="@+id/itTwitter"
+        android:title="Twitter"
+       />
+    <item
+        android:id="@+id/itSnapchat"
+        android:title="Snapchat"
+        />
+
+    <item
+        android:id="@+id/itInstagram"
+        android:title="Instagram"/>
+
+
+</menu>
